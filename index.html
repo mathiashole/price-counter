@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <title>Listado</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+  <div class="container">
+    <main>
+      <h1 class="text-center">Contador</h1>
+      <hr class="my-4">
+      <div class="row">
+        <div class="row-lg">
+          <div class="col-lg-6">
+            <label for="Item" class="form-label">Descripcion</label>
+            <input type="text" class="form-control" id="item">
+          </div>
+          <div class="col mt-4">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Tipo de transacion</label>
+            <input type="checkbox" class="form-check-input" id="tradeBuy">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Compra</label>
+            <input type="checkbox" class="form-check-input" id="tradeShell">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Venta</label>
+          </div>
+          <div class="col mt-4">
+            <label for="flexCheckDisabled" class="form-check-label me-5">Tipo de IVA</label>
+            <input type="checkbox" class="form-check-input" id="standar">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Basico</label>
+            <input type="checkbox" class="form-check-input" id="min">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Minimo</label>
+            <input type="checkbox" class="form-check-input" id="cero">
+            <label for="flexCheckDisabled" class="form-check-label me-4">Exento</label>
+          </div>
+          <div class="col-lg-6 mt-4">
+            <label for="Item" class="form-label">Subtotla ($)</label>
+            <input type="number" class="form-control" id="price">
+          </div>
+          <div class="float-start">
+            <button type="button" class="btn btn-dark my-3 btn-lg active" id="agregar">Ingresar</button>
+          </div>
+        </div>
+        <table class="table">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Tipo</th>
+              <th scope="col">Subtotal($)</th>
+              <th scope="col">IVA($)</th>
+              <th scope="col">total (IVA inc)</th>
+            </tr>
+          </thead>
+          <tbody id="contenedor">
+            <!-- <tr>
+              <th id="contenedor"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <th scope="row"></th>
+              <td></td>
+              <td></td>
+              <td></td> -->
+            </tr>
+          </tbody>
+        </table>
+        <div class="float-end">
+          <button type="button" class="btn btn-outline-danger my-3" id="limpiar">Limpiar</button>
+        </div>
+      </div>
+  </div>
+  </main>
+  <footer class="my-5 pt-5 text-muted text-center text-small">
+  </footer>
+  </div>
+  <script src="js/almacenar.js"></script>
+</body>
+
+</html>
